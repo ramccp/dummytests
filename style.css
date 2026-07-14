@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #f4f7fb;
-    color: #1d2433;
+    background: #eef6f2;
+    color: #134e4a;
 }
 
 .planner {
@@ -26,12 +26,13 @@ body {
 .planner__header h1 {
     margin: 0;
     font-size: clamp(2rem, 4vw, 2.8rem);
+    color: #065f46;
 }
 
 .planner__header p {
     margin: 10px auto 0;
     max-width: 36rem;
-    color: #5c6b7c;
+    color: #166534;
 }
 
 .planner__board {
@@ -40,18 +41,19 @@ body {
     background: #ffffff;
     border-radius: 24px;
     padding: 24px;
-    box-shadow: 0 24px 60px rgba(34, 49, 84, 0.08);
+    box-shadow: 0 24px 60px rgba(14, 88, 74, 0.08);
 }
 
 .planner__form {
     display: grid;
     gap: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .planner__form label {
     font-size: 0.95rem;
     font-weight: 600;
+    color: #0f766e;
 }
 
 .planner__input-group {
@@ -63,34 +65,76 @@ body {
 .planner__input-group input {
     width: 100%;
     padding: 14px 16px;
-    border: 1px solid #dfe4eb;
+    border: 1px solid #c7f0e6;
     border-radius: 16px;
     outline: none;
     font-size: 1rem;
+    background: #f7fdf9;
 }
 
 .planner__input-group input:focus {
-    border-color: #7a92b0;
-    box-shadow: 0 0 0 4px rgba(122, 146, 176, 0.12);
+    border-color: #22c55e;
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
 }
 
 .planner__input-group button {
     padding: 14px 20px;
     border: none;
     border-radius: 16px;
-    background: #3b82f6;
+    background: #10b981;
     color: #ffffff;
     font-weight: 700;
     cursor: pointer;
 }
 
 .planner__input-group button:hover {
-    background: #2563eb;
+    background: #059669;
+}
+
+.planner__filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: #ecfdf5;
+    border: 1px solid #d1fae5;
+}
+
+.planner__filters span {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #115e59;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-button {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    background: #f0fdf4;
+    color: #0f766e;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.filter-button--active,
+.filter-button:hover {
+    background: #10b981;
+    color: #ffffff;
 }
 
 .planner__list h2 {
     margin: 0 0 16px;
     font-size: 1.1rem;
+    color: #0f5132;
 }
 
 .planner__list ul {
@@ -104,8 +148,8 @@ body {
 .planner__list li {
     padding: 16px 18px;
     border-radius: 18px;
-    background: #f7f9fc;
-    color: #364154;
+    background: #ecfdf5;
+    color: #134e4a;
     font-size: 1rem;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
