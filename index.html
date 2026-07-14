@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task Planner</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <main class="planner">
+        <header class="planner__header">
+            <h1>Task Planner</h1>
+            <p>Keep your day organized with a simple task list.</p>
+        </header>
+
+        <section class="planner__board">
+            <form class="planner__form" action="#" method="get">
+                <label for="task-input">New task</label>
+                <div class="planner__input-group">
+                    <input id="task-input" type="text" placeholder="Add a task..." />
+                    <button type="submit">Add</button>
+                </div>
+            </form>
+
+            <div class="planner__list">
+                <h2>Today</h2>
+                <ul>
+                    <li><span>Review project notes</span></li>
+                    <li><span>Write a short summary</span></li>
+                    <li><span>Send status update</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
